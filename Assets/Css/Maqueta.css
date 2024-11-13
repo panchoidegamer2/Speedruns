@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: '';
+}
+/* HEADER */
+header{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+}
+/* logo */
+header .logo{
+    background-color: blue;
+}
+
+
+/* botones en el header */
+header .botones{
+    width: 60%;
+    align-content: center;
+}
+header .botones ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+}
+header .botones li{
+    display: inline-block;
+}
+header .botones li a{
+    text-decoration: none;
+    color: white;
+}
+header .botones li a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #dd9933;
+    text-decoration-thickness: 2px;
+}
+.menuH{
+    display: none;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding-bottom: 15px;
+}
+/* botones del footer */
+footer .botones{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+footer .botones ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+}
+footer .botones li{
+    display: inline-block;
+    margin-top: 5px;
+}
+footer .botones li a{
+    text-decoration: none;
+    color: white;
+}

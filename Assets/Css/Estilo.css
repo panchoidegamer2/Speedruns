@@ -1,0 +1,23 @@
+
+/*ultimas runs*/
+.ultimasRuns{
+    background-color: green;
+    width: 40%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ultimasruns .boton a{
+    text-decoration: none;
+    background-color: black;
+}
+/* noticias*/
+.noticias{
+    background-color: yellow;
+    width: 40%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
