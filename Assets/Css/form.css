@@ -1,0 +1,20 @@
+/* formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 40%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* informacion */
+.informacion{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 50%;
+    height: 70%;
+}

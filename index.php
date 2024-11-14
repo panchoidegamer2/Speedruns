@@ -37,7 +37,7 @@
                     }
                 }
             ?>
-            <button class="boton"><a href="">Ver todas las runs</a></button>
+            <button class="boton"><a href="Php/verRuns/Runs.php">Ver todas las runs</a></button>
         </div>
         <div class="noticias">
             <div class="titulo">
@@ -50,7 +50,7 @@
                 $respuesta = mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($respuesta)>0)
                 {
-                    for($i=0;$i<3;$i++)
+                    for($i=0;$i<5;$i++)
                     {
                         $filas = mysqli_fetch_assoc($respuesta);
                         echo '
@@ -62,7 +62,7 @@
                     }
                 }
             ?>
-            <button class="boton"><a href="">Ver mas noticias</a></button>
+            <button class="boton"><a href="Php/noticias/verNoticias.php">Ver mas noticias</a></button>
         </div>
     </main>
     <?php

@@ -1,7 +1,4 @@
 IMPORTANTE
--la encriptacion al momento de logearse
--datos truncados en la fecha de publicacion de las noticias
-
 
 cosas que hacer
 -el header y el footer secundario

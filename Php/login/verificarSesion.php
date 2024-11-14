@@ -26,6 +26,10 @@ else
     else 
     {
         echo $hashedPassword;
+        echo '<br>';
+        echo md5('Admin');
+        echo '<br>';
+        echo $arreglo['contrasenia'];
         echo "contaseña incorrecta
         <a href='formLogin.php'>Volver</a>";
     }
