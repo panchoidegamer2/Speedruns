@@ -11,16 +11,13 @@
         require("../maqueta/headerSecundario.php")
     ?>
     <main>
-        <?php
-        $usuario = $_SESSION['nombreUsuario'];
-        $mail = $_SESSION['email'];
-        echo'
-            <div class="informacion">
-            '.$usuario.'<br>'.$mail.'
-            <button><a href="logOut.php">Cerrar sesion</button>
-            </div>
-        ';
-        ?>
+        <form action="subirNoticia.php" class="formulario" method="post">
+            <h1>Escribe la noticia</h1>
+            <label>
+                    <input type="text" name="informacion" id="informacion" max="200">
+            </label>
+            <input type="submit" value="Publicar noticia">
+        </form>
     </main>
     <?php
         require("../maqueta/footerSecundario.php")

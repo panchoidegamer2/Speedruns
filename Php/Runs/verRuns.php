@@ -12,10 +12,10 @@
     ?>
     <main>
     <?php
-        echo'<div id="contenedorNoticia">';
+        echo'<div id="contenedorRuns">';
             require("../conexion/conexion.php");
             
-            $sql = "SELECT * FROM noticias ORDER BY idNoticia DESC";
+            $sql = "SELECT * FROM runs WHERE estado='1' ORDER BY tiempo DESC";
 
             $respuesta = mysqli_query($conexion,$sql);
 
@@ -23,16 +23,25 @@
             {
                 while ($filas = mysqli_fetch_assoc($respuesta))
                 {
-                    echo '<div class="noticia">
+                    echo '<div class="run">
                         <div class="autor">'.$filas['nombreUsuario'].'</div>
-                        <div class="contenidoNoticia">
-                            <div class="descripcion"><p>'.$filas['descripción'].'</p>
-                            <p>Publicado:'.$filas['fechaPublicacion'].'</p></div>
+                        <div class="contenido">
+                            <div class="tiempo"><p>'.$filas['tiempo'].'</div>
+                            <div class="tipo"><p>'.$filas['tipoRun'].'</div>
+                            <div class="porcentaje"><p>'.$filas['porcentaje'].'%</div>
                         </div>
                     </div>';   
                 }
             }
             echo '</div>';
+
+            if (isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == 1){
+                echo '
+                    <div class="AprovarRuns">
+                        <button><a href="runsPorAprovar.php">Lista de runs por aprovar</a></button>
+                    </div>
+                ';
+            }
     ?>
     </main>
     <?php

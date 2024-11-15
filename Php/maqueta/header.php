@@ -11,9 +11,9 @@ echo "<header class='site-header'>
   <ul>";
     if(isset($_SESSION["tipoUsuario"]))
     {
-      echo "<li><b><a href='Php/publicarRun/formRun.php'>PUBLICAR RUN</a></b></li>";
+      echo "<li><b><a href='Php/Runs/formRun.php'>PUBLICAR RUN</a></b></li>";
     }
-    echo "<li><b><a href='Php/verRuns/Runs.php'>RUNS</a></b></li>
+    echo "<li><b><a href='Php/Runs/verRuns.php'>RUNS</a></b></li>
           <li><b><a href='Php/verJugadores/Jugadores.php'>JUGADORES</a></b></li>";
     if(isset($_SESSION["tipoUsuario"])){
       echo "<li><b><a href='Php/cuenta/Cuenta.php'>CUENTA</a></b></li>";

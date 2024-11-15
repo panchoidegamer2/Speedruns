@@ -1,4 +1,5 @@
 IMPORTANTE
+-no aprueba las runs
 
 cosas que hacer
 -el header y el footer secundario

@@ -27,7 +27,7 @@
             </label>
             <label>
                 Duracion
-                    <input required placeholder="Tiempo" type="Time" name="duracion"  id="Tiempo" step="1" min="00:00:01">
+                    <input required placeholder="Tiempo" type="Time" name="duracion"  id="Tiempo" step="1" min="00:00:01" value="00:00:00">
             </label>
             <label>
                 Porcentaje de completacion

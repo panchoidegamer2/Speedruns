@@ -37,7 +37,7 @@
                     }
                 }
             ?>
-            <button class="boton"><a href="Php/verRuns/Runs.php">Ver todas las runs</a></button>
+            <button class="boton"><a href="Php/Runs/verRuns.php">Ver todas las runs</a></button>
         </div>
         <div class="noticias">
             <div class="titulo">
@@ -46,7 +46,7 @@
             <?php
                 $i=0;
                 require ("Php/conexion/conexion.php");
-                $sql = "SELECT * FROM noticias ORDER BY idNoticia DESC";
+                $sql = "SELECT * FROM noticias WHERE estado='1' ORDER BY idNoticia DESC";
                 $respuesta = mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($respuesta)>0)
                 {
@@ -56,7 +56,7 @@
                         echo '
                             <div class="noticia">
                                 <div id="Autor"><h1>'.$filas['nombreUsuario'].'</h1></div>
-                                <div id="descripcion">'.$filas['descripción'].'</div>
+                                <div id="descripcion">'.$filas['descripcion'].'</div>
                             </div>
                         ';
                     }

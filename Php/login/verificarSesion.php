@@ -21,6 +21,7 @@ else
         $_SESSION['tipoUsuario'] = $arreglo['tipoUsuario'];
         $_SESSION['nombreUsuario'] = $arreglo['nombreUsuario'];
         $_SESSION['cantRuns'] = $arreglo['cantRuns'];
+        $_SESSION['email'] = $arreglo['Email'];
         header ("Location: ../../index.php");
     } 
     else 

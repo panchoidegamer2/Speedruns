@@ -15,7 +15,7 @@
         echo'<div id="contenedorUsuarios">';
             require("../conexion/conexion.php");
         
-            $sql = "SELECT * FROM usuarios ORDER BY cantRuns";
+            $sql = "SELECT * FROM usuarios WHERE tipoUsuario='0' AND estado='1' ORDER BY cantRuns";
 
             $respuesta = mysqli_query($conexion,$sql);
 
@@ -27,8 +27,15 @@
                         <div class="nombre">'.$filas['nombreUsuario'].'</div>
                         <div class="contenido">
                             <div class="cantidadRuns"><p>'.$filas['cantRuns'].'</div>
-                        </div>
-                    </div>';   
+                        </div>';
+                        if (isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == 1)
+                        {
+                          echo '<form action="banearJugador.php" method="post">
+                            <input type="hidden" name="usuario" value="'.$filas['nombreUsuario'].'">
+                            <input type="submit" value="Banear usuario">
+                        </form>'; 
+                        }
+                        echo '</div>';   
                 }
             }
             echo '</div>';
