@@ -23,7 +23,7 @@ echo '
         <div class="redes">
             <ul>    
                 <li><h2><b>Redes sociales</a></b><h2></li>
-                <li><a href="https://discord.com/invite/hollowknight">Discord</a></li>
+                <li><a href="https://discord.gg/xbcT8g2b">Discord</a></li>
                 <li><a href="https://x.com/speedruncom">Twitter</a></li>
             </ul>
         </div>

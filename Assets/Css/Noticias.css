@@ -1,0 +1,31 @@
+main{
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor{
+    background-color: #565a75;
+    width: 40%;
+    margin: 50px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+}
+#noticias{
+    margin-top: 0px;
+}
+.noticia{
+    background-color: #0f0f1b;
+    color: #fafbf6;
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+}

@@ -1,20 +1,66 @@
+main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 /* formulario */
 .formulario{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
-    width: 40%;
+    background-color: #565a75;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    color: #fafbf6;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
 }
 form{
     display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    margin: 10%;
+    background-color: #0f0f1b;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+}
+label{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#publicarRun{
+    margin: 4%;
 }
 
 /* informacion */
 .informacion{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    align-items: center;
+    background-color: #565a75;
+    color: #fafbf6;
     width: 50%;
-    height: 70%;
+    height: 1%;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+    padding: 10px;
+}
+.contenedor{
+    background-color: #0f0f1b;
+    width: 80%;
+    margin: 10px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+}
+.informacion .presentacion{
+    margin-top: 5%;
 }

@@ -30,8 +30,8 @@
                             <div class="tipo"><p>'.$filas['tipoRun'].'</div>
                             <div class="porcentaje"><p>'.$filas['porcentaje'].'%</div>
                         </div>
-                        <form action="aprovarRun.php" method="post">
-                            <input type="hidden" name="id" value="'.$filas['idRun'].'">
+                        <form action="aprobarRun.php" method="post">
+                            <input type="hidden" name="idRun" value="'.$filas['idRun'].'">
                             <input type="submit" value="Aprovar run">
                         </form>
                         

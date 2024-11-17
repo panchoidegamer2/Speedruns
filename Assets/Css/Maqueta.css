@@ -1,12 +1,19 @@
+@font-face {
+    font-family: "miFuente";
+    src: url("../Fuentes/Trajan Pro Regular.ttf") format("truetype");
+  }
+
 *{
     margin: 0px;
 }
+p, h1, a, h2, h3, h4 { 
+    font-family: "miFuente";
+  }
 main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    font-family: '';
 }
 /* HEADER */
 header{
@@ -15,11 +22,11 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: red;
+    background-color: #0f0f1b;
 }
 /* logo */
 header .logo{
-    background-color: blue;
+    background-color: #0f0f1b;
 }
 
 
@@ -40,11 +47,11 @@ header .botones li{
 }
 header .botones li a{
     text-decoration: none;
-    color: white;
+    color: #fafbf6;
 }
 header .botones li a:hover{
     text-decoration-line: underline;
-    text-decoration-color: #dd9933;
+    text-decoration-color: #c6b7be;
     text-decoration-thickness: 2px;
 }
 .menuH{
@@ -63,7 +70,7 @@ header .botones li a:hover{
 }
 .logo a{
     text-decoration: none;
-    color: white;
+    color: #fafbf6;
 }
 .logo #texto{
     padding-top: 10px;
@@ -76,7 +83,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
+    background-color: #0f0f1b;
+    color: #fafbf6;
     padding-bottom: 15px;
 }
 /* botones del footer */
@@ -99,5 +107,5 @@ footer .botones li{
 }
 footer .botones li a{
     text-decoration: none;
-    color: white;
+    color: #fafbf6;
 }

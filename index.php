@@ -20,7 +20,7 @@
             <?php
                 $i=0;
                 require("Php/conexion/conexion.php");
-                $sql = "SELECT * FROM runs ORDER BY idRun DESC";
+                $sql = "SELECT * FROM runs WHERE estado='1' ORDER BY idRun DESC";
                 $respuesta = mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($respuesta)>0)
                 {
@@ -29,9 +29,9 @@
                        $filas = mysqli_fetch_assoc($respuesta);
                        echo'
                             <div class="run">
-                                <div id="Autor"><h1>'.$filas['nombreUsuario'].'</h1></div>
-                                <div id="tiempo">'.$filas['tiempo'].'</div>
-                                <div id="tipoRun">'.$filas['tipoRun'].'</div>
+                                <div id="Autor"><h2>'.$filas['nombreUsuario'].'</h2></div>
+                                <div id="tiempo"><p>Duracion de la run: '.$filas['tiempo'].'</p></div>
+                                <div id="tipoRun"><p>Tipo de run: '.$filas['tipoRun'].'</p></div>
                             </div>
                        ';
                     }
@@ -55,8 +55,8 @@
                         $filas = mysqli_fetch_assoc($respuesta);
                         echo '
                             <div class="noticia">
-                                <div id="Autor"><h1>'.$filas['nombreUsuario'].'</h1></div>
-                                <div id="descripcion">'.$filas['descripcion'].'</div>
+                                <div id="Autor"><h2>'.$filas['nombreUsuario'].'</h2></div>
+                                <div id="descripcion"><p>'.$filas['descripcion'].'</p></div>
                             </div>
                         ';
                     }

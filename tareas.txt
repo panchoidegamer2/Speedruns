@@ -1,11 +1,10 @@
 IMPORTANTE
--no aprueba las runs
+-aumentar el numero de runs aprobadas en la base de datos
 
 cosas que hacer
--el header y el footer secundario
--arreglar las referencias de casi todo
 -estilo
-
+-media querys
+-casos de uso
 
 ideas
 -los fondos de las paginas van a ser los fondos en el juego

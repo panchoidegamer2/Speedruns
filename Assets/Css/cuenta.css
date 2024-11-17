@@ -1,0 +1,41 @@
+main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* informacion */
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #565a75;
+    width: 35%;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+/* runs */
+.misRuns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    background-color: #565a75;
+    border: 5px solid #0f0f1b;
+    border-radius: 15px;
+    padding: 1%;
+}
+.run{
+    width: 80%;
+    background-color: #0f0f1b;
+    color: #fafbf6;
+    border: 2.5px solid #0f0f1b;
+    border-radius: 15px;
+    margin-top: 15px;
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    padding: 11px;
+}
