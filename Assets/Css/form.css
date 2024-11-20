@@ -64,3 +64,16 @@ label{
 .informacion .presentacion{
     margin-top: 5%;
 }
+
+@media (min-width:326px) and (max-width: 426px){
+    main{
+        flex-wrap: wrap;
+    }
+    .formulario{
+        width: 90%;
+    }
+    .informacion{
+        width: 90%;
+        margin-top: 5%;
+    }
+}

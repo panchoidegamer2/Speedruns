@@ -57,7 +57,7 @@
                     echo '<div class="usuario">
                         <div class="nombre"><p>Nombre: '.$filas['nombreUsuario'].'</p></div>
                         <div class="contenido">
-                            <div class="cantidadRuns"><p>Cantidad de runs aprobadas'.$filas['cantRuns'].'</p></div>
+                            <div class="cantidadRuns"><p>Cantidad de runs aprobadas: '.$filas['cantRuns'].'</p></div>
                         </div>';
                         echo '</div>';   
                 }

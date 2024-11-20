@@ -49,3 +49,18 @@
     border: 5px solid #0f0f1b;
     border-radius: 15px;
 }
+
+@media (min-width:326px) and (max-width: 426px){
+    
+    main{
+        flex-wrap: wrap;
+    }
+    
+    .ultimasRuns{
+        width: 90%;
+    }
+
+    .noticias{
+        width: 90%;
+    }
+}

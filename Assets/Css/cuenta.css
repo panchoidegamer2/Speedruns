@@ -39,3 +39,16 @@ main{
     flex-direction: row;
     padding: 11px;
 }
+
+@media (min-width:326px) and (max-width: 426px){
+    main{
+        flex-wrap: wrap;
+    }
+    .informacion{
+        width: 90%;
+    }
+    .misRuns{
+        width: 90%;
+        margin-top: 5%;
+    }
+}

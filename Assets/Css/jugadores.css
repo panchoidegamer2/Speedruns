@@ -1,6 +1,7 @@
 .contenedor{
     background-color: #565a75;
     width: 40%;
+    height: 1%;
     margin: 50px;
     padding: 1%;
     display: flex;
@@ -20,4 +21,14 @@
     align-items: center;
     border: 5px solid #0f0f1b;
     border-radius: 15px;
+}
+
+@media (min-width:326px) and (max-width: 426px){
+    main{
+        flex-wrap: wrap;
+    }
+    
+    .contenedor{
+        width: 90%;
+    }
 }

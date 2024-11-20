@@ -6,7 +6,7 @@ main{
 .contenedor{
     background-color: #565a75;
     width: 40%;
-    margin: 50px;
+    margin: 100px;
     padding: 1%;
     display: flex;
     flex-direction: column;
@@ -14,8 +14,9 @@ main{
     border: 5px solid #0f0f1b;
     border-radius: 15px;
 }
-#noticias{
-    margin-top: 0px;
+#informacion{
+    height: 100px;
+    width:90%;
 }
 .noticia{
     background-color: #0f0f1b;
@@ -28,4 +29,18 @@ main{
     align-items: center;
     border: 5px solid #0f0f1b;
     border-radius: 15px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+@media (min-width:326px) and (max-width: 426px){
+    .contenedor{
+        width: 90%;
+    }
+    #form{
+        margin: 75px;
+    }
 }

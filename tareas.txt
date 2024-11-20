@@ -1,10 +1,5 @@
 IMPORTANTE
--aumentar el numero de runs aprobadas en la base de datos
-
+-manual de usuario
 cosas que hacer
--estilo
--media querys
--casos de uso
 
-ideas
--los fondos de las paginas van a ser los fondos en el juego
+

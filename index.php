@@ -15,7 +15,7 @@
     <main>
         <div class="ultimasRuns">
             <div class="titulo">
-                <h1>Ultimas runs aprobadas</h1>
+                <h1>Ultimas runs <br>aprobadas</h1>
             </div>
             <?php
                 $i=0;
@@ -41,7 +41,7 @@
         </div>
         <div class="noticias">
             <div class="titulo">
-                <h1>Noticias</h1>
+                <br><h1>Noticias</h1>
             </div>
             <?php
                 $i=0;

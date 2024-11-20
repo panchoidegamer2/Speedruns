@@ -109,3 +109,59 @@ footer .botones li a{
     text-decoration: none;
     color: #fafbf6;
 }
+
+@media (min-width:326px) and (max-width: 426px){
+    header{
+        width: 100%;
+    }
+    header .botones {
+        display:none;
+        position: absolute;
+        height: 40%;
+        width: 100%;
+        background-color: black;
+        overflow: visible;
+        z-index: 3;
+        transition: 300ms ease-in-out;
+      }
+      header .botones.click{
+        display:flex;
+        justify-content: center;
+        position: absolute;
+        top: 77px;
+        height: 40%;
+        width: 100%;
+        background-color: black;
+        overflow: visible;
+        z-index: 3;
+        transition: 300ms ease-in-out;
+      }
+      header .botones ul{
+        flex-direction: column;
+      }
+    
+    .menuH{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #0f0f1b;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-right: 50px;
+        gap: 8px;
+      }
+      .bar{
+        height: 2px;
+        width: 30px;
+        background-color: #0f0f1b;
+      }
+      footer{
+        flex-direction: column;
+      }
+      footer .botones{
+        flex-direction: column;
+      }
+}

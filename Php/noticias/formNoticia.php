@@ -12,14 +12,14 @@
         require("../maqueta/headerSecundario.php")
     ?>
     <main>
-        <div class="contenedor">
-        <form action="subirNoticia.php" class="formulario" method="post">
-            <h1>Escribe la noticia</h1>
-            <label>
-                    <input type="text" name="informacion" id="informacion" min="1" max="200">
-            </label>
-            <input type="submit" value="Publicar noticia">
-        </form> 
+        <div class="contenedor" id="form">
+            <form action="subirNoticia.php" class="formulario" method="post">
+                <h1>Escribe la noticia</h1>
+                <label>
+                        <input type="text" name="informacion" id="informacion" min="1" max="200" size="32">
+                </label>
+                <input type="submit" value="Publicar noticia">
+            </form> 
         </div>
         
     </main>
